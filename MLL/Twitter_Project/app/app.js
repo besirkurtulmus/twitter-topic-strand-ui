@@ -1317,6 +1317,15 @@ App.prototype.defineGlobal = function(data){
     
     window.hashtag_apostleUserID = data['Apostles'];
     
+    // Define the new parameters
+    window.hashtag_SWMX = data['SWMX'];
+    
+    window.hashtag_SWMY = data['SWMY'];
+    
+    window.hashtag_SWMZ = data['SWMZ'];
+    
+    window.hashtag_TotalPageRankOfMissionaryAndApostles = data['TotalPageRankOfMissionaryAndApostles'];
+    
     if(data['MostRetweetedTweets'] != null || data['MostRetweetedTweets'] != 'undefiend'){
         window.hashtag_topReTweet = data['MostRetweetedTweets'];
     }
@@ -1466,6 +1475,12 @@ App.prototype.showHashtagInfo = function($hashtag, $number) {
     
     // Add the participant count to the table
     $("div#topicInfo" + $number + " table").append("<tr><td><small><b># Participants:</b></small> <small>" + hashtag_participantCount + "</small></td></tr>");
+    
+    // Add the new parameters to the table
+    $("div#topicInfo" + $number + " table").append("<tr><td><small><b># SWMX:</b></small> <small>" + hashtag_SWMX + "</small></td></tr>");
+    $("div#topicInfo" + $number + " table").append("<tr><td><small><b># SWMY:</b></small> <small>" + hashtag_SWMY + "</small></td></tr>");
+    $("div#topicInfo" + $number + " table").append("<tr><td><small><b># SWMZ:</b></small> <small>" + hashtag_SWMZ + "</small></td></tr>");
+    $("div#topicInfo" + $number + " table").append("<tr><td><small><b># TotalPageRank:</b></small> <small>" + hashtag_TotalPageRankOfMissionaryAndApostles + "</small></td></tr>");
     
     // Add the top 3 reTweets button
     $("div#topicInfo" + $number + " table").append("<tr><td><center><small><b><a href=\"#topReTweetModal-" + $number + "\" role=\"button\" data-toggle=\"modal\"><i class=\"fa fa-star\"></i> Top reTweets</a></b></small></center></td></tr>");
