@@ -1,0 +1,13 @@
+#wrapper {
+    width: 804px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+#chart_div {
+    float:left; /* add this */
+    border: 1px solid red;
+}
+#chart_div2 {
+    border: 1px solid green;
+    float: left; /* add this */
+}

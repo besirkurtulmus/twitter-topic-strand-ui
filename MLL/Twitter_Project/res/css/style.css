@@ -1,0 +1,95 @@
+div.center, a.center, button.center, h3.center, p.center, h4.center, table.center {
+    
+    width: 100%;
+    align: center;
+    margin: 0px auto;
+    text-align: center;
+}
+
+img.center {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 90px;
+   height: 90px;
+   margin-top: -45px; /* Half the height */
+   margin-left: -45px; /* Half the width */
+}
+
+div.hide {
+    
+    height: 400px;
+    
+    width: 700px;
+    
+    margin-left:-350px;
+    
+}
+
+div.mainPage {
+    
+    margin-top: 10px;
+    
+}
+
+#loadingMessage {
+position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 9999;
+background: rgb(77, 77, 77) transparent; /* default fallback */
+background: rgba(77, 77, 77, 0.99); /* nice browsers */
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FC4D4D4D, endColorstr=#FC4D4D4D); /* IE 6/7 */
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FC4D4D4D, endColorstr=#FC4D4D4D)"; /* IE8 */
+}
+
+.icon-large {
+    transform:scale(2.0,2.0);
+    -ms-transform:scale(2.0,2.0); /* IE 9 */
+    -moz-transform:scale(2.0,2.0); /* Firefox */
+    -webkit-transform:scale(2.0,2.0); /* Safari and Chrome */
+    -o-transform:scale(2.0,2.0); /* Opera */
+}
+
+th {
+    word-wrap: break-word;
+    max-width: 100px;
+}
+
+.miniChart {float:left; display:inline; width: 24%;}
+
+a.miniChartHead, p.miniChartHead {float:left; display:inline; font-size : 75%; 	cursor: pointer; *cursor: hand;}
+
+table {
+table-layout: fixed;
+word-wrap: break-word;
+}
+
+
+#wordCloud, #tweetVolumeChart {
+    position:relative;
+    left:0px;
+    top:0px;
+    z-index:99;
+}
+
+/*
+#wchart1-cont {
+  overflow-x: auto;
+  overflow-y: visible;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+#wchart1 {
+  display: block;
+}*/
+
+.modal {
+    position:relative;
+    z-index:100;
+}

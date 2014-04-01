@@ -1,0 +1,9 @@
+<?php
+
+include_once("./config.php"); // Load up the configurations ...
+
+include_once("./lib.php"); // Load up the main library ...
+
+$app = new App($settings); // Create the new App instance ...
+
+?>
